@@ -7,11 +7,11 @@
 
 </head>
 <body >
-    <div id="315b86ff772c41348978249fe0075c7b" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="3f69828e5d894ac7b8a6a81dbd3164b9" class="chart-container" style="width:1200px; height:600px; "></div>
     <script>
-        var chart_315b86ff772c41348978249fe0075c7b = echarts.init(
-            document.getElementById('315b86ff772c41348978249fe0075c7b'), 'white', {renderer: 'canvas'});
-        var option_315b86ff772c41348978249fe0075c7b = {
+        var chart_3f69828e5d894ac7b8a6a81dbd3164b9 = echarts.init(
+            document.getElementById('3f69828e5d894ac7b8a6a81dbd3164b9'), 'white', {renderer: 'canvas'});
+        var option_3f69828e5d894ac7b8a6a81dbd3164b9 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -24,6 +24,8 @@
         "enabled": false
     },
     "color": [
+        "#d14a61",
+        "#5793f3",
         "#5470c6",
         "#91cc75",
         "#fac858",
@@ -38,21 +40,15 @@
         {
             "type": "bar",
             "name": "\u8425\u4e1a\u603b\u6536\u5165",
+            "yAxisIndex": 0,
             "legendHoverLink": true,
             "data": [
-                3.22,
-                8.35,
-                7.89,
-                9.47,
-                11.89,
-                14.89,
-                20.3,
-                22.46,
-                32.03,
-                44.97,
-                85.1,
-                81.3,
-                57.61
+                20.35,
+                29.79,
+                57.61,
+                72.54,
+                92.38,
+                114.11
             ],
             "realtimeSort": false,
             "showBackground": false,
@@ -70,27 +66,28 @@
             "z": 2,
             "label": {
                 "show": true,
+                "position": "outside",
                 "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
             }
         },
         {
             "type": "bar",
             "name": "\u51c0\u5229\u6da6",
+            "yAxisIndex": 1,
             "legendHoverLink": true,
             "data": [
-                0.18,
-                0.63,
-                0.67,
-                0.98,
-                1.56,
-                1.75,
-                3.98,
-                4.04,
-                6.05,
-                8.8,
-                23.37,
-                20.53,
-                1.61
+                -3.01,
+                -2.55,
+                8.78,
+                11.66,
+                13.28,
+                16.65
             ],
             "realtimeSort": false,
             "showBackground": false,
@@ -108,7 +105,14 @@
             "z": 2,
             "label": {
                 "show": true,
+                "position": "outside",
                 "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
             }
         }
     ],
@@ -142,10 +146,10 @@
     ],
     "tooltip": {
         "show": true,
-        "trigger": "item",
+        "trigger": "axis",
         "triggerOn": "mousemove|click",
         "axisPointer": {
-            "type": "line"
+            "type": "cross"
         },
         "showContent": true,
         "alwaysShowContent": false,
@@ -169,10 +173,10 @@
             "nameLocation": "end",
             "nameGap": 15,
             "gridIndex": 0,
-            "axisLabel": {
+            "axisLine": {
                 "show": true,
-                "rotate": -15,
-                "margin": 8
+                "onZero": true,
+                "onZeroAxisIndex": 0
             },
             "inverse": false,
             "offset": 0,
@@ -189,13 +193,6 @@
                 }
             },
             "data": [
-                "2011",
-                "2012",
-                "2013",
-                "2014",
-                "2015",
-                "2016",
-                "2017",
                 "2018",
                 "2019",
                 "2020",
@@ -207,14 +204,80 @@
     ],
     "yAxis": [
         {
+            "type": "value",
+            "name": "\u8425\u6536",
             "show": true,
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
             "gridIndex": 0,
+            "axisLine": {
+                "show": true,
+                "onZero": true,
+                "onZeroAxisIndex": 0,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid",
+                    "color": "#d14a61"
+                }
+            },
+            "axisLabel": {
+                "show": true,
+                "margin": 8,
+                "formatter": "{value} \u4ebf\u5143"
+            },
+            "inverse": false,
+            "position": "left",
+            "offset": 0,
+            "splitNumber": 5,
+            "min": -3.01,
+            "max": 114.11,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        },
+        {
+            "type": "value",
+            "name": "\u51c0\u5229\u6da6",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisLine": {
+                "show": true,
+                "onZero": true,
+                "onZeroAxisIndex": 0,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid",
+                    "color": "#5793f3"
+                }
+            },
+            "axisLabel": {
+                "show": true,
+                "margin": 8,
+                "formatter": "{value} \u4ebf\u5143"
+            },
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
+            "min": -3.01,
+            "max": 114.11,
             "minInterval": 0,
             "splitLine": {
                 "show": true,
@@ -231,9 +294,9 @@
     "title": [
         {
             "show": true,
-            "text": "Bar-\u65cb\u8f6cX\u8f74\u6807\u7b7e",
+            "text": "\u8054\u5f71\u533b\u7597\u8425\u4e1a\u6536\u5165-\u5229\u6da6\u8868",
             "target": "blank",
-            "subtext": "\u89e3\u51b3\u6807\u7b7e\u540d\u5b57\u8fc7\u957f\u7684\u95ee\u9898",
+            "subtext": "\u6309\u5e74\u5ea6",
             "subtarget": "blank",
             "padding": 5,
             "itemGap": 10,
@@ -241,9 +304,37 @@
             "textVerticalAlign": "auto",
             "triggerEvent": false
         }
+    ],
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "showDetail": true,
+            "showDataShadow": true,
+            "realtime": true,
+            "start": 20,
+            "end": 80,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "top": "15%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "shadowOffsetX": 0,
+            "shadowOffsetY": 0
+        }
     ]
 };
-        chart_315b86ff772c41348978249fe0075c7b.setOption(option_315b86ff772c41348978249fe0075c7b);
+        chart_3f69828e5d894ac7b8a6a81dbd3164b9.setOption(option_3f69828e5d894ac7b8a6a81dbd3164b9);
     </script>
 </body>
 </html>

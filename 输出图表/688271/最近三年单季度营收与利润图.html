@@ -7,11 +7,11 @@
 
 </head>
 <body >
-    <div id="315b86ff772c41348978249fe0075c7b" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="7ca3d17cebd048a2a13e5d7f23ae5f21" class="chart-container" style="width:1200px; height:600px; "></div>
     <script>
-        var chart_315b86ff772c41348978249fe0075c7b = echarts.init(
-            document.getElementById('315b86ff772c41348978249fe0075c7b'), 'white', {renderer: 'canvas'});
-        var option_315b86ff772c41348978249fe0075c7b = {
+        var chart_7ca3d17cebd048a2a13e5d7f23ae5f21 = echarts.init(
+            document.getElementById('7ca3d17cebd048a2a13e5d7f23ae5f21'), 'white', {renderer: 'canvas'});
+        var option_7ca3d17cebd048a2a13e5d7f23ae5f21 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -24,6 +24,8 @@
         "enabled": false
     },
     "color": [
+        "#d14a61",
+        "#5793f3",
         "#5470c6",
         "#91cc75",
         "#fac858",
@@ -38,21 +40,22 @@
         {
             "type": "bar",
             "name": "\u8425\u4e1a\u603b\u6536\u5165",
+            "yAxisIndex": 0,
             "legendHoverLink": true,
             "data": [
-                3.22,
-                8.35,
-                7.89,
-                9.47,
-                11.89,
-                14.89,
-                20.3,
-                22.46,
-                32.03,
-                44.97,
-                85.1,
-                81.3,
-                57.61
+                17.04,
+                15.81,
+                25.87,
+                16.59,
+                25.13,
+                16.87,
+                33.8,
+                22.13,
+                30.58,
+                21.61,
+                39.78,
+                23.5,
+                29.83
             ],
             "realtimeSort": false,
             "showBackground": false,
@@ -70,27 +73,35 @@
             "z": 2,
             "label": {
                 "show": true,
+                "position": "outside",
                 "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
             }
         },
         {
             "type": "bar",
             "name": "\u51c0\u5229\u6da6",
+            "yAxisIndex": 1,
             "legendHoverLink": true,
             "data": [
-                0.18,
-                0.63,
-                0.67,
-                0.98,
-                1.56,
-                1.75,
-                3.98,
-                4.04,
-                6.05,
-                8.8,
-                23.37,
-                20.53,
-                1.61
+                3.06,
+                -5.59,
+                11.66,
+                2.68,
+                4.19,
+                0.32,
+                6.08,
+                2.77,
+                5.1,
+                0.42,
+                8.36,
+                3.0,
+                4.98
             ],
             "realtimeSort": false,
             "showBackground": false,
@@ -108,7 +119,14 @@
             "z": 2,
             "label": {
                 "show": true,
+                "position": "outside",
                 "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
             }
         }
     ],
@@ -142,10 +160,10 @@
     ],
     "tooltip": {
         "show": true,
-        "trigger": "item",
+        "trigger": "axis",
         "triggerOn": "mousemove|click",
         "axisPointer": {
-            "type": "line"
+            "type": "cross"
         },
         "showContent": true,
         "alwaysShowContent": false,
@@ -169,10 +187,10 @@
             "nameLocation": "end",
             "nameGap": 15,
             "gridIndex": 0,
-            "axisLabel": {
+            "axisLine": {
                 "show": true,
-                "rotate": -15,
-                "margin": 8
+                "onZero": true,
+                "onZeroAxisIndex": 0
             },
             "inverse": false,
             "offset": 0,
@@ -189,32 +207,98 @@
                 }
             },
             "data": [
-                "2011",
-                "2012",
-                "2013",
-                "2014",
-                "2015",
-                "2016",
-                "2017",
-                "2018",
-                "2019",
-                "2020",
-                "2021",
-                "2022",
-                "2023"
+                "2021-06-30",
+                "2021-09-30",
+                "2021-12-31",
+                "2022-03-31",
+                "2022-06-30",
+                "2022-09-30",
+                "2022-12-31",
+                "2023-03-31",
+                "2023-06-30",
+                "2023-09-30",
+                "2023-12-31",
+                "2024-03-31",
+                "2024-06-30"
             ]
         }
     ],
     "yAxis": [
         {
+            "type": "value",
+            "name": "\u8425\u6536",
             "show": true,
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
             "gridIndex": 0,
+            "axisLine": {
+                "show": true,
+                "onZero": true,
+                "onZeroAxisIndex": 0,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid",
+                    "color": "#d14a61"
+                }
+            },
+            "axisLabel": {
+                "show": true,
+                "margin": 8,
+                "formatter": "{value} \u4ebf\u5143"
+            },
+            "inverse": false,
+            "position": "left",
+            "offset": 0,
+            "splitNumber": 5,
+            "min": -10.0,
+            "max": 40.0,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        },
+        {
+            "type": "value",
+            "name": "\u51c0\u5229\u6da6",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisLine": {
+                "show": true,
+                "onZero": true,
+                "onZeroAxisIndex": 0,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid",
+                    "color": "#5793f3"
+                }
+            },
+            "axisLabel": {
+                "show": true,
+                "margin": 8,
+                "formatter": "{value} \u4ebf\u5143"
+            },
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
+            "min": -10.0,
+            "max": 40.0,
             "minInterval": 0,
             "splitLine": {
                 "show": true,
@@ -231,9 +315,9 @@
     "title": [
         {
             "show": true,
-            "text": "Bar-\u65cb\u8f6cX\u8f74\u6807\u7b7e",
+            "text": "\u8054\u5f71\u533b\u7597\u8425\u4e1a\u6536\u5165-\u5229\u6da6\u8868",
             "target": "blank",
-            "subtext": "\u89e3\u51b3\u6807\u7b7e\u540d\u5b57\u8fc7\u957f\u7684\u95ee\u9898",
+            "subtext": "\u6309\u5e74\u5ea6",
             "subtarget": "blank",
             "padding": 5,
             "itemGap": 10,
@@ -241,9 +325,37 @@
             "textVerticalAlign": "auto",
             "triggerEvent": false
         }
+    ],
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "showDetail": true,
+            "showDataShadow": true,
+            "realtime": true,
+            "start": 20,
+            "end": 80,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "top": "15%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "shadowOffsetX": 0,
+            "shadowOffsetY": 0
+        }
     ]
 };
-        chart_315b86ff772c41348978249fe0075c7b.setOption(option_315b86ff772c41348978249fe0075c7b);
+        chart_7ca3d17cebd048a2a13e5d7f23ae5f21.setOption(option_7ca3d17cebd048a2a13e5d7f23ae5f21);
     </script>
 </body>
 </html>
