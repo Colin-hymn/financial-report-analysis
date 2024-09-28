@@ -7,11 +7,11 @@
 
 </head>
 <body >
-    <div id="886c249202ec45a0a9a6cfd4cf927444" class="chart-container" style="width:1200px; height:600px; "></div>
+    <div id="0af00063559244db86cf6d41be02e5dd" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_886c249202ec45a0a9a6cfd4cf927444 = echarts.init(
-            document.getElementById('886c249202ec45a0a9a6cfd4cf927444'), 'white', {renderer: 'canvas'});
-        var option_886c249202ec45a0a9a6cfd4cf927444 = {
+        var chart_0af00063559244db86cf6d41be02e5dd = echarts.init(
+            document.getElementById('0af00063559244db86cf6d41be02e5dd'), 'white', {renderer: 'canvas'});
+        var option_0af00063559244db86cf6d41be02e5dd = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -24,8 +24,6 @@
         "enabled": false
     },
     "color": [
-        "#d14a61",
-        "#5793f3",
         "#5470c6",
         "#91cc75",
         "#fac858",
@@ -39,26 +37,26 @@
     "series": [
         {
             "type": "bar",
-            "name": "\u8425\u4e1a\u603b\u6536\u5165",
-            "yAxisIndex": 0,
+            "name": "\u7a7a\u767d",
             "legendHoverLink": true,
             "data": [
-                17.04,
-                15.81,
-                25.87,
-                16.59,
-                25.13,
-                16.87,
-                33.8,
-                22.13,
-                30.58,
-                21.61,
-                39.78,
-                23.5,
-                29.83
+                0.0,
+                146.00000000000003,
+                144.00000000000003,
+                144.00000000000003,
+                124.60000000000002,
+                124.42770000000002,
+                84.8777,
+                84.8777,
+                79.3477,
+                79.4417,
+                86.5917,
+                89.4317,
+                0.0
             ],
             "realtimeSort": false,
             "showBackground": false,
+            "stack": "stack1",
             "stackStrategy": "samesign",
             "cursor": "pointer",
             "barMinHeight": 0,
@@ -72,8 +70,55 @@
             "zlevel": 0,
             "z": 2,
             "label": {
+                "show": false,
+                "margin": 8
+            },
+            "itemStyle": {
+                "color": "rgba(0,0,0,0)"
+            },
+            "rippleEffect": {
                 "show": true,
-                "position": "outside",
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "bar",
+            "name": "\u6536\u76ca",
+            "legendHoverLink": true,
+            "data": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.094,
+                7.15,
+                2.84,
+                0.0
+            ],
+            "realtimeSort": false,
+            "showBackground": false,
+            "stack": "stack1",
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": false,
                 "margin": 8
             },
             "rippleEffect": {
@@ -85,26 +130,26 @@
         },
         {
             "type": "bar",
-            "name": "\u51c0\u5229\u6da6",
-            "yAxisIndex": 1,
+            "name": "\u652f\u51fa",
             "legendHoverLink": true,
             "data": [
-                3.06,
-                -5.59,
-                11.66,
-                2.68,
-                4.19,
-                0.3225,
-                6.08,
-                2.77,
-                5.1,
-                0.4176,
-                8.36,
-                3.0,
-                4.98
+                0.0,
+                118.85,
+                2.0,
+                0.0,
+                19.4,
+                0.1723,
+                39.55,
+                0.0,
+                5.53,
+                0.0,
+                0.0,
+                0.0,
+                0.0
             ],
             "realtimeSort": false,
             "showBackground": false,
+            "stack": "stack1",
             "stackStrategy": "samesign",
             "cursor": "pointer",
             "barMinHeight": 0,
@@ -118,8 +163,52 @@
             "zlevel": 0,
             "z": 2,
             "label": {
+                "show": false,
+                "margin": 8
+            },
+            "rippleEffect": {
                 "show": true,
-                "position": "outside",
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "bar",
+            "name": "\u8425\u6536\u548c\u5229\u6da6",
+            "legendHoverLink": true,
+            "data": [
+                264.85,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                89.91
+            ],
+            "realtimeSort": false,
+            "showBackground": false,
+            "stack": "stack1",
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": false,
                 "margin": 8
             },
             "rippleEffect": {
@@ -133,8 +222,10 @@
     "legend": [
         {
             "data": [
-                "\u8425\u4e1a\u603b\u6536\u5165",
-                "\u51c0\u5229\u6da6"
+                "\u7a7a\u767d",
+                "\u6536\u76ca",
+                "\u652f\u51fa",
+                "\u8425\u6536\u548c\u5229\u6da6"
             ],
             "selected": {},
             "show": true,
@@ -160,10 +251,10 @@
     ],
     "tooltip": {
         "show": true,
-        "trigger": "axis",
+        "trigger": "item",
         "triggerOn": "mousemove|click",
         "axisPointer": {
-            "type": "cross"
+            "type": "line"
         },
         "showContent": true,
         "alwaysShowContent": false,
@@ -182,15 +273,17 @@
     },
     "xAxis": [
         {
+            "name": "\u9879\u76ee",
             "show": true,
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
             "gridIndex": 0,
-            "axisLine": {
+            "axisLabel": {
                 "show": true,
-                "onZero": true,
-                "onZeroAxisIndex": 0
+                "rotate": -30,
+                "margin": 8,
+                "interval": 0
             },
             "inverse": false,
             "offset": 0,
@@ -207,88 +300,31 @@
                 }
             },
             "data": [
-                "2021-06-30",
-                "2021-09-30",
-                "2021-12-31",
-                "2022-03-31",
-                "2022-06-30",
-                "2022-09-30",
-                "2022-12-31",
-                "2023-03-31",
-                "2023-06-30",
-                "2023-09-30",
-                "2023-12-31",
-                "2024-03-31",
-                "2024-06-30"
+                "\u8425\u4e1a\u603b\u6536\u5165",
+                "\u8425\u4e1a\u6210\u672c",
+                "\u8425\u4e1a\u7a0e\u91d1\u53ca\u9644\u52a0",
+                "\u9500\u552e\u8d39\u7528",
+                "\u7ba1\u7406\u8d39\u7528",
+                "\u7814\u53d1\u8d39\u7528",
+                "\u8d22\u52a1\u8d39\u7528",
+                "\u8d44\u4ea7\u51cf\u503c\u635f\u5931",
+                "\u4fe1\u7528\u51cf\u503c\u635f\u5931",
+                "\u516c\u5141\u4ef7\u503c\u53d8\u52a8\u6536\u76ca",
+                "\u6295\u8d44\u6536\u76ca",
+                "\u5176\u4ed6\u6536\u76ca",
+                "\u8425\u4e1a\u5229\u6da6"
             ]
         }
     ],
     "yAxis": [
         {
             "type": "value",
-            "name": "\u8425\u6536",
+            "name": "\u91d1\u989d",
             "show": true,
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
             "gridIndex": 0,
-            "axisLine": {
-                "show": true,
-                "onZero": true,
-                "onZeroAxisIndex": 0,
-                "lineStyle": {
-                    "show": true,
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid",
-                    "color": "#d14a61"
-                }
-            },
-            "axisLabel": {
-                "show": true,
-                "margin": 8,
-                "formatter": "{value} \u4ebf\u5143"
-            },
-            "inverse": false,
-            "position": "left",
-            "offset": 0,
-            "splitNumber": 5,
-            "min": -10.0,
-            "max": 40.0,
-            "minInterval": 0,
-            "splitLine": {
-                "show": true,
-                "lineStyle": {
-                    "show": true,
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            }
-        },
-        {
-            "type": "value",
-            "name": "\u51c0\u5229\u6da6",
-            "show": true,
-            "scale": false,
-            "nameLocation": "end",
-            "nameGap": 15,
-            "gridIndex": 0,
-            "axisLine": {
-                "show": true,
-                "onZero": true,
-                "onZeroAxisIndex": 0,
-                "lineStyle": {
-                    "show": true,
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid",
-                    "color": "#5793f3"
-                }
-            },
             "axisLabel": {
                 "show": true,
                 "margin": 8,
@@ -297,8 +333,6 @@
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
-            "min": -10.0,
-            "max": 40.0,
             "minInterval": 0,
             "splitLine": {
                 "show": true,
@@ -315,9 +349,8 @@
     "title": [
         {
             "show": true,
-            "text": "\u8054\u5f71\u533b\u7597\u8425\u4e1a\u6536\u5165-\u5229\u6da6\u8868",
+            "text": "\u4e09\u5ce1\u80fd\u6e902023\u76c8\u5229\u60c5\u51b5",
             "target": "blank",
-            "subtext": "\u6309\u5e74\u5ea6",
             "subtarget": "blank",
             "padding": 5,
             "itemGap": 10,
@@ -325,37 +358,9 @@
             "textVerticalAlign": "auto",
             "triggerEvent": false
         }
-    ],
-    "dataZoom": [
-        {
-            "show": true,
-            "type": "slider",
-            "showDetail": true,
-            "showDataShadow": true,
-            "realtime": true,
-            "start": 20,
-            "end": 80,
-            "orient": "horizontal",
-            "zoomLock": false,
-            "filterMode": "filter"
-        }
-    ],
-    "grid": [
-        {
-            "show": false,
-            "zlevel": 0,
-            "z": 2,
-            "top": "15%",
-            "containLabel": false,
-            "backgroundColor": "transparent",
-            "borderColor": "#ccc",
-            "borderWidth": 1,
-            "shadowOffsetX": 0,
-            "shadowOffsetY": 0
-        }
     ]
 };
-        chart_886c249202ec45a0a9a6cfd4cf927444.setOption(option_886c249202ec45a0a9a6cfd4cf927444);
+        chart_0af00063559244db86cf6d41be02e5dd.setOption(option_0af00063559244db86cf6d41be02e5dd);
     </script>
 </body>
 </html>
